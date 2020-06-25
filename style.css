@@ -1,0 +1,166 @@
+body{
+    font-family: 'Asap', sans-serif;
+    color: #ffffff;
+    background-color: #ebebeb;
+    margin-top: 0px;
+}
+/* Global view */
+
+header{
+    max-width: 1024px;
+    min-height: 100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    padding:10px;
+    border: 1px solid;
+    margin-left: 20px;
+}
+
+.container{
+    min-height: 500px;
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 140px;
+}
+
+.header-container{
+    background-color: grey;
+    min-height: 100px;
+    position: fixed;
+    width: 100%;
+    font-size: 20px;
+}
+
+.cols{
+    background-color: cadetblue;
+    width: 30%;
+    margin-bottom: 40px;
+}
+
+.cols p{
+    color: white;
+    font-size: 14px;
+    padding: 20px 25px;
+    line-height: 1.25rem;
+}
+
+.hide-desktop-only{
+    display: none;
+}
+
+.cols img{
+    width: 100%;
+    height: auto;
+}
+
+.cols p::first-line{
+    font-weight: bold;
+}
+
+.highlight{
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.mob-wrapper{
+    display: none;
+}
+
+/* Tablet view */
+
+@media (max-width: 760px){
+
+    .cols{width: 45%;
+
+}
+
+.hide-desktop-only{
+    display: block;
+}
+
+/* header{
+    display: block;
+    text-align: center;
+} */
+
+.container{
+    padding-top: 40px;
+}
+
+.header-container{
+    position: relative;
+
+}
+
+nav{
+    display: none;
+}
+
+a{
+    display: block;
+    margin-left: 0px;
+}
+
+.logo{
+    padding: 40px 0px;
+}
+
+.mob-wrapper{
+    display: block;
+    padding-right: 30px; 
+}
+
+.mob-nav{
+    display: none;
+    position: absolute;
+    padding-top: 10px;
+    margin-left: -70px;
+    text-align: center;
+}
+
+.mobbutton{
+    background-color: coral;
+}
+
+/* Mobile view */
+
+@media(max-width:400px){
+
+    .cols{width: 100%;}
+    .hide-mobile{display: none;}
+
+}
+
+header{
+    display: block;
+    text-align: center;
+}
+
+.container{
+    padding-top: 40px;
+}
+
+.header-container{
+    position: relative;
+
+}
+
+a{
+    display: block;
+    margin-left: 0px;
+}
+
+.logo{
+    padding: 40px 0px;
+
+}
